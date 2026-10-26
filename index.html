@@ -49,12 +49,31 @@
   <section class="pn">
     <div class="pn-bar">
       <span class="t">Release register</span>
-      <span class="v">v1.10.9</span>
+      <span class="v">v1.11.0</span>
     </div>
 
     <div class="pn-body">
       <div class="pn-inner">
 
+        <article class="pn-entry">
+          <div class="pn-v">
+            <span class="n">v1.11.0</span>
+            <span class="d">26 Oct 2026</span>
+          </div>
+          <ul>
+            <li>Turning spoofing off for a site now covers the whole tab, including widgets and frames the site embeds from other domains.</li>
+            <li>The version number in the popup is now a link to these patch notes, and it glows until you have opened the notes for the version you are running.</li>
+            <li>Fonts now follow the language of the profile, not just its operating system. A Japanese profile reports the Japanese faces a real Japanese Windows installs. Twenty-two writing systems are covered.</li>
+            <li>Corrected which fonts Windows actually ships: seven families that are on every Windows, including the Chinese, Japanese and Korean interface faces, were being hidden at random, and eleven more that ship with every edition were being rotated as if they were optional.</li>
+            <li>Fonts are now reported in packages, the way machines really have them. A profile either has the Office faces or none of them, instead of a random half, and on Linux the font set follows the distribution the profile claims.</li>
+            <li>CSS system fonts were answering with values no real browser returns. Now match, per operating system.</li>
+            <li>Audio latency was a rounded decimal. The values now come from the buffer sizes the audio backends actually use on Windows, macOS and Linux.</li>
+            <li>Updated all browser profiles to current versions: Chrome and Brave 156, Edge 156, Vivaldi 8.2, Firefox 158, Safari 27. Client Hints now report the Windows and macOS versions current browsers report.</li>
+            <li>Timezone spoofing: a frame could be handed the parent window's clock, and reading that frame's Date through a fresh script could expose the extension. Frames that have set their own clock are no longer touched.</li>
+            <li>Refreshed the ad and tracker list: 207,608 domains, and 69 entries that were never valid addresses are gone. The element-hiding list is refreshed too.</li>
+            <li>Generated profiles now pick a screen resolution that fits the display you are actually on, so a wide-gamut HDR screen is no longer paired with a cheap panel's resolution.</li>
+          </ul>
+        </article>
         <article class="pn-entry">
           <div class="pn-v">
             <span class="n">v1.10.9</span>
