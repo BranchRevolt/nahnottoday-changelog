@@ -22,27 +22,34 @@
 <link rel="preload" href="static/fonts/courier-prime-400-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="static/css/fonts.css">
 <link rel="stylesheet" href="static/css/site.css">
+<script src="static/js/site.js" defer></script>
 </head>
 <body>
 
 <header class="mast">
   <a class="mast-name" href="https://warpcoredev.org/">WarpCore<em>Dev</em></a>
-  <nav class="mast-nav">
+
+  <button class="mast-toggle" aria-controls="mast-nav" aria-expanded="false" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav class="mast-nav" id="mast-nav">
     <a href="https://warpcoredev.org/projects">Projects</a>
     <a href="https://warpcoredev.org/about">About</a>
-    <a class="on" href="/">Patch notes</a>
+    <a href="https://www.youtube.com/@coffee_slurper" target="_blank" rel="noopener">YouTube</a>
+    <a href="https://github.com/BranchRevolt" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://x.com/warpcoredev" target="_blank" rel="noopener">X</a>
   </nav>
 </header>
 
 <main class="page">
   <p class="eyebrow">NahNotToday</p>
   <h1>Patch notes</h1>
-  <p class="metaline">Privacy &amp; Security &middot; <a href="https://chromewebstore.google.com/detail/nahnottoday-privacy-secur/jghokblbkodbmconlghgecahmjnimjko">Chrome Web Store</a></p>
 
   <section class="pn">
     <div class="pn-bar">
       <span class="t">Release register</span>
-      <span class="v">current v1.10.9</span>
+      <span class="v">v1.10.9</span>
     </div>
 
     <div class="pn-body">
@@ -50,7 +57,7 @@
 
         <article class="pn-entry">
           <div class="pn-v">
-            <span class="n">v1.10.9<span class="sticker">current</span></span>
+            <span class="n">v1.10.9</span>
             <span class="d">16 Oct 2026</span>
           </div>
           <ul>
@@ -130,7 +137,7 @@
 
 <footer class="foot">
   <span>&copy; 2026 WarpCoreDev</span>
-  <a href="https://warpcoredev.org/">warpcoredev.org</a>
+  <a href="https://donation.streamiverse.io/warpcoredev" target="_blank" rel="noopener">Support the studio</a>
   <a href="mailto:warpcoredev@warpcoredev.org">warpcoredev@warpcoredev.org</a>
 </footer>
 
